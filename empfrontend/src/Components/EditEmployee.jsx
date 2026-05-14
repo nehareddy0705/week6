@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from "react-router";
 import { useEffect } from "react";
 import axios from "axios";
 
+const BASE_URL = import.meta.env.VITE_API_URL;
+
 function EditEmployee() {
   const {
     register,
@@ -28,7 +30,7 @@ function EditEmployee() {
   const saveModifiedEmp = async (modifiedEmp) => {
     // console.log(modifiedEmp);
     //make HTTP PUT req
-    const res = await axios.put(`http://localhost:3000/employee-api/employees/${state._id}`, modifiedEmp);
+    const res = await axios.put(`${BASE_URL}/employee-api/employees/${state._id}`, modifiedEmp);
     if (res.status === 200) {
       //navigate to ListOfEMps
       navigate("/list");
