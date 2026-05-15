@@ -5,10 +5,10 @@ function ViewEmployee() {
   const navigate = useNavigate();
   return (
     <div className=" mt-10">
-      <h1 className="text-5xl text-center text-cyan-950 mb-5">
+      <h1 className="text-5xl text-center mb-5">
         Employee Details
       </h1>
-      <div className="text-center rounded-4xl py-10 text-xl text-fuchsia-950 bg-fuchsia-50 mt-15 mx-96 shadow-fuchsia-500 shadow-xl">
+      <div className="text-center rounded-4xl py-10 text-xl border border-gray-500 mt-15 mx-96">
         <p>Name: {state.name}</p>
         <p>Email: {state.email}</p>
         <p>Mobile: {state.mobile}</p>
