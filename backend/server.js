@@ -11,8 +11,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "http://localhost:5174",
-      "https://week6-blush.vercel.app"
+      "https://week6-employeee-management.vercel.app/"
     ]
   })
 );
